@@ -1,0 +1,179 @@
+@primary: #0059ab;
+@textPrimary: #337ab7;
+@textDark: #161618;
+@headingFont: 6rem;
+@headingSmall: 1.8rem;
+@text: 1.6rem;
+@normalText: 1.4rem;
+@textSecondary: #fff;
+@textTertiary: #8b8b8b;
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    margin: 0px;
+    padding: 0px; // font-family: 'Roboto', sans-serif;
+}
+
+*:focus {
+    outline: none;
+}
+
+ ::-webkit-scrollbar {
+    display: none;
+}
+
+.mainContainer {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: scroll;
+    .navBar {
+        position: absolute;
+        height: 10rem;
+        left: 4rem;
+        right: 4rem;
+        background: transparent;
+        .logo {
+            position: relative;
+            padding: 3rem;
+            float: left;
+            height: 4rem;
+        }
+        .menu {
+            position: relative;
+            padding: 3rem;
+            float: right;
+            height: 5rem;
+        }
+    }
+    .mainSlider {
+        position: absolute;
+        top: 10rem;
+        width: 100%;
+        padding-left: 3rem;
+        background-image: url("../images/homeSlider.jpg");
+        background-size: cover;
+        height: 50rem;
+        overflow: hidden;
+        .sliderHeading {
+            position: relative;
+            height: 15rem;
+            padding: 3rem 0rem 3rem 4rem;
+            max-width: 60rem;
+            font-size: 6rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: @primary;
+        }
+        .description {
+            position: relative;
+            padding: 0rem 0rem 3rem 4rem;
+            height: 10rem;
+            font-size: 1.8rem;
+            color: @textDark;
+            font-weight: 700;
+            text-transform: uppercase;
+            max-width: 30rem;
+            line-height: 3rem;
+            text-align: left;
+            letter-spacing: 0.2rem;
+        }
+        .button {
+            position: relative;
+            height: 5rem;
+            color: @textPrimary;
+            text-transform: uppercase;
+            border: 0.2rem solid @primary;
+            line-height: 5rem;
+            max-width: 20rem;
+            font-size: @text;
+            margin-left: 4rem;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            text-align: center;
+            &:hover {
+                background-color: @primary;
+                color: #fff;
+            }
+        }
+    }
+    .programContainer {
+        position: absolute;
+        top: 60rem;
+        height: 60rem;
+        width: 100%;
+        background-color: @primary;
+        .columnProgram {
+            position: relative;
+            float: left;
+            width: 33.3%;
+            height: 100%;
+            background-color: @primary;
+            .textContainer {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                letter-spacing: 0.2rem;
+                transform: translateY(-50%);
+                .programIcon {
+                    position: relative;
+                    height: 4rem;
+                    padding-bottom: 2rem;
+                    margin-left: auto;
+                    margin-right: auto;
+                    display: block;
+                }
+                .heading {
+                    position: relative;
+                    padding-left: 6rem;
+                    padding-right: 6rem;
+                    padding-bottom: 2rem;
+                    height: 10rem;
+                    line-height: 5rem;
+                    font-size: 4rem;
+                    font-weight: 600;
+                    color: #fff;
+                    text-align: center;
+                    .highlight {
+                        background: @primary;
+                        display: inline-block;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                    }
+                }
+                .programText {
+                    position: relative;
+                    height: 4rem;
+                    padding: 0rem 2rem;
+                    line-height: 3rem;
+                    text-align: center;
+                    font-size: 2rem;
+                    color: #fff;
+                    font-weight: 400;
+                }
+                .currency {
+                    position: relative;
+                    height: 4rem;
+                    color: #fff;
+                    font-size: 3rem;
+                    font-weight: 500;
+                    float: left;
+                    text-align: center;
+                    padding-left: 8rem;
+                }
+            }
+        }
+    }
+    .trendingProgram {
+        position: absolute;
+        top: 120rem;
+        height: 40rem;
+        width: 100%;
+        background-color: #fff;
+    }
+}

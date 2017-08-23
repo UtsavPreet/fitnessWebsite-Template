@@ -1,0 +1,166 @@
+html {
+  font-size: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+*:focus {
+  outline: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.mainContainer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+.mainContainer .navBar {
+  position: absolute;
+  height: 10rem;
+  left: 4rem;
+  right: 4rem;
+  background: transparent;
+}
+.mainContainer .navBar .logo {
+  position: relative;
+  padding: 3rem;
+  float: left;
+  height: 4rem;
+}
+.mainContainer .navBar .menu {
+  position: relative;
+  padding: 3rem;
+  float: right;
+  height: 5rem;
+}
+.mainContainer .mainSlider {
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  padding-left: 3rem;
+  background-image: url("../images/homeSlider.jpg");
+  background-size: cover;
+  height: 50rem;
+  overflow: hidden;
+}
+.mainContainer .mainSlider .sliderHeading {
+  position: relative;
+  height: 15rem;
+  padding: 3rem 0rem 3rem 4rem;
+  max-width: 60rem;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #0059ab;
+}
+.mainContainer .mainSlider .description {
+  position: relative;
+  padding: 0rem 0rem 3rem 4rem;
+  height: 10rem;
+  font-size: 1.8rem;
+  color: #161618;
+  font-weight: 700;
+  text-transform: uppercase;
+  max-width: 30rem;
+  line-height: 3rem;
+  text-align: left;
+  letter-spacing: 0.2rem;
+}
+.mainContainer .mainSlider .button {
+  position: relative;
+  height: 5rem;
+  color: #337ab7;
+  text-transform: uppercase;
+  border: 0.2rem solid #0059ab;
+  line-height: 5rem;
+  max-width: 20rem;
+  font-size: 1.6rem;
+  margin-left: 4rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  text-align: center;
+}
+.mainContainer .mainSlider .button:hover {
+  background-color: #0059ab;
+  color: #fff;
+}
+.mainContainer .programContainer {
+  position: absolute;
+  top: 60rem;
+  height: 60rem;
+  width: 100%;
+  background-color: #0059ab;
+}
+.mainContainer .programContainer .columnProgram {
+  position: relative;
+  float: left;
+  width: 33.3%;
+  height: 100%;
+  background-color: #0059ab;
+}
+.mainContainer .programContainer .columnProgram .textContainer {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  letter-spacing: 0.2rem;
+  transform: translateY(-50%);
+}
+.mainContainer .programContainer .columnProgram .textContainer .programIcon {
+  position: relative;
+  height: 4rem;
+  padding-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.mainContainer .programContainer .columnProgram .textContainer .heading {
+  position: relative;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 2rem;
+  height: 10rem;
+  line-height: 5rem;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}
+.mainContainer .programContainer .columnProgram .textContainer .heading .highlight {
+  background: #0059ab;
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.mainContainer .programContainer .columnProgram .textContainer .programText {
+  position: relative;
+  height: 4rem;
+  padding: 0rem 2rem;
+  line-height: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 400;
+}
+.mainContainer .programContainer .columnProgram .textContainer .currency {
+  position: relative;
+  height: 4rem;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 500;
+  float: left;
+  text-align: center;
+  padding-left: 8rem;
+}
+.mainContainer .trendingProgram {
+  position: absolute;
+  top: 120rem;
+  height: 40rem;
+  width: 100%;
+  background-color: #fff;
+}
