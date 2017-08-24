@@ -163,3 +163,11 @@ body {
   width: 100%;
   background-color: #fff;
 }
+.mainContainer .trendingProgram .program {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  background-image: url(../images/trendingProgram2.jpg);
+  background-position: left;
+  background-size: cover;
+}
