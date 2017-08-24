@@ -32,6 +32,12 @@ body {
     width: 100%;
     box-sizing: border-box;
     overflow-y: scroll;
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
     .navBar {
         position: absolute;
         height: 10rem;
@@ -183,10 +189,25 @@ body {
             height: 25rem;
             width: 25rem;
             z-index: 3;
+            color: #fff;
+            text-align: center;
             transform: translate(-50%, -50%);
-            .stat{
+            .stat {
                 position: relative;
-                
+                padding-top: 5rem;
+                padding-bottom: 2rem;
+                font-size: 6rem;
+                font-weight: 500;
+                height: 5rem;
+                line-height: 5rem;
+            }
+            .statDescription {
+                position: relative;
+                height: 3rem;
+                line-height: 2.5rem;
+                padding: 0rem 5rem;
+                font-size: @headingSmall;
+                font-weight: 400;
             }
         }
         .program {
@@ -232,6 +253,7 @@ body {
                 color: @textDark;
                 font-size: @normalText;
                 font-weight: 300;
+                letter-spacing: 1px;
             }
             .button {
                 position: relative;
@@ -244,12 +266,31 @@ body {
                 font-size: @text;
                 font-weight: 300;
                 color: @primary;
+                text-transform: uppercase;
                 background-color: transparent;
                 &:hover {
                     color: @textSecondary;
                     background-color: @primary;
                 }
             }
+        }
+    }
+    .featuresContainer {
+        position: absolute;
+        top: 170rem;
+        height: 60rem;
+        width: 100%;
+        background-image: url(../images/featureContainer.jpg);
+        background-size: cover;
+        background-position-x: center;
+        .tagLine {
+            
+        }
+        .heading {}
+        .feature {
+            .number {}
+            .title {}
+            .description {}
         }
     }
 }

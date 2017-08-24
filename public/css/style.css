@@ -20,6 +20,12 @@ body {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+.mainContainer .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
 .mainContainer .navBar {
   position: absolute;
   height: 10rem;
@@ -168,14 +174,29 @@ body {
   top: 50%;
   left: 50%;
   background-color: #0059ab;
-  color: #fff;
   height: 25rem;
   width: 25rem;
   z-index: 3;
+  color: #fff;
+  text-align: center;
   transform: translate(-50%, -50%);
 }
 .mainContainer .trendingProgram .statContainer .stat {
   position: relative;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  font-size: 6rem;
+  font-weight: 500;
+  height: 5rem;
+  line-height: 5rem;
+}
+.mainContainer .trendingProgram .statContainer .statDescription {
+  position: relative;
+  height: 3rem;
+  line-height: 2.5rem;
+  padding: 0rem 5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 .mainContainer .trendingProgram .program {
   position: relative;
@@ -221,6 +242,7 @@ body {
   color: #161618;
   font-size: 1.4rem;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 .mainContainer .trendingProgram .textContainer .button {
   position: relative;
@@ -233,9 +255,19 @@ body {
   font-size: 1.6rem;
   font-weight: 300;
   color: #0059ab;
+  text-transform: uppercase;
   background-color: transparent;
 }
 .mainContainer .trendingProgram .textContainer .button:hover {
   color: #fff;
   background-color: #0059ab;
+}
+.mainContainer .featuresContainer {
+  position: absolute;
+  top: 170rem;
+  height: 60rem;
+  width: 100%;
+  background-image: url(../images/featureContainer.jpg);
+  background-size: cover;
+  background-position-x: center;
 }
