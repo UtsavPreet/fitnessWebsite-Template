@@ -154,8 +154,7 @@ body {
   font-size: 3rem;
   font-weight: 500;
   float: left;
-  text-align: center;
-  padding-left: 8rem;
+  padding-left: 12rem;
 }
 .mainContainer .trendingProgram {
   position: absolute;
