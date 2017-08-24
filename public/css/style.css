@@ -159,15 +159,83 @@ body {
 .mainContainer .trendingProgram {
   position: absolute;
   top: 120rem;
-  height: 40rem;
+  height: 50rem;
   width: 100%;
   background-color: #fff;
 }
+.mainContainer .trendingProgram .statContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #0059ab;
+  color: #fff;
+  height: 25rem;
+  width: 25rem;
+  z-index: 3;
+  transform: translate(-50%, -50%);
+}
+.mainContainer .trendingProgram .statContainer .stat {
+  position: relative;
+}
 .mainContainer .trendingProgram .program {
   position: relative;
+  float: left;
   height: 100%;
   width: 50%;
   background-image: url(../images/trendingProgram2.jpg);
   background-position: left;
   background-size: cover;
+}
+.mainContainer .trendingProgram .textContainer {
+  position: absolute;
+  top: 9rem;
+  left: 14rem;
+  right: 18rem;
+  letter-spacing: 0.2rem;
+  text-align: center;
+}
+.mainContainer .trendingProgram .textContainer .tagLine {
+  position: relative;
+  height: 3rem;
+  line-height: 3rem;
+  color: #8b8b8b;
+  padding-top: 2rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.mainContainer .trendingProgram .textContainer .heading {
+  position: relative;
+  padding-bottom: 2rem;
+  height: 7rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #161618;
+  padding-top: 2rem;
+  padding-left: 1rem;
+}
+.mainContainer .trendingProgram .textContainer .programText {
+  position: relative;
+  padding: 2rem 0rem;
+  height: 8rem;
+  line-height: 2rem;
+  color: #161618;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.mainContainer .trendingProgram .textContainer .button {
+  position: relative;
+  margin-top: 3rem;
+  height: 5rem;
+  margin-left: 9rem;
+  margin-right: 9rem;
+  line-height: 5rem;
+  border: 0.2rem solid #0059ab;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #0059ab;
+  background-color: transparent;
+}
+.mainContainer .trendingProgram .textContainer .button:hover {
+  color: #fff;
+  background-color: #0059ab;
 }

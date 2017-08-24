@@ -163,7 +163,6 @@ body {
                     font-size: 3rem;
                     font-weight: 500;
                     float: left;
-                   
                     padding-left: 12rem;
                 }
             }
@@ -172,16 +171,85 @@ body {
     .trendingProgram {
         position: absolute;
         top: 120rem;
-        height: 40rem;
+        height: 50rem;
         width: 100%;
         background-color: #fff;
-        .program{
+        .statContainer {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            background-color: @primary;
+            color: @textSecondary;
+            height: 25rem;
+            width: 25rem;
+            z-index: 3;
+            transform: translate(-50%, -50%);
+            .stat{
+                position: relative;
+                
+            }
+        }
+        .program {
             position: relative;
+            float: left;
             height: 100%;
             width: 50%;
             background-image: url(../images/trendingProgram2.jpg);
             background-position: left;
             background-size: cover;
+        }
+        .textContainer {
+            position: absolute;
+            top: 9rem;
+            left: 14rem;
+            right: 18rem;
+            letter-spacing: 0.2rem;
+            text-align: center;
+            .tagLine {
+                position: relative;
+                height: 3rem;
+                line-height: 3rem;
+                color: @textTertiary;
+                padding-top: 2rem;
+                font-size: @headingSmall;
+                font-weight: 400;
+            }
+            .heading {
+                position: relative;
+                padding-bottom: 2rem;
+                height: 7rem;
+                font-size: 3rem;
+                font-weight: 700;
+                color: @textDark;
+                padding-top: 2rem;
+                padding-left: 1rem;
+            }
+            .programText {
+                position: relative;
+                padding: 2rem 0rem;
+                height: 8rem;
+                line-height: 2rem;
+                color: @textDark;
+                font-size: @normalText;
+                font-weight: 300;
+            }
+            .button {
+                position: relative;
+                margin-top: 3rem;
+                height: 5rem;
+                margin-left: 9rem;
+                margin-right: 9rem;
+                line-height: 5rem;
+                border: 0.2rem solid @primary;
+                font-size: @text;
+                font-weight: 300;
+                color: @primary;
+                background-color: transparent;
+                &:hover {
+                    color: @textSecondary;
+                    background-color: @primary;
+                }
+            }
         }
     }
 }
